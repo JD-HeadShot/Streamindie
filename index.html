@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-<title>Streamndie</title>
+<title>Streamindie</title>
 <style>
 .des {
   font-family: 'Crimson Text', serif;
@@ -96,12 +96,55 @@ html {
 a {
 text-decoration: none;
 }
+
+.login {
+  position: absolute;
+  right: 60px;
+  top: 22px;
+}
+
+.cadastro{
+  position: relative;
+  right: -20px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: antiquewhite;
+}
+
+a:active {
+  color: #E2E2E2;
+}
+
+.video-responsivo{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.video-responsivo iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1>Streamndie</h1>
+  <div class="login"><a href="login/login.html">Entrar</a> <span class="cadastro"><a href="login/cadastro.html">Criar uma conta</a></span></div>
 </div>
 
 <div class="row">
@@ -118,14 +161,16 @@ text-decoration: none;
 <div class="col-6 col-s-9">
   <h1>Feijão</h1>
   <p class="des">A vida de um garoto na escola que se mete em altas aventuras.</p>
-  <iframe src="https://player.vimeo.com/video/239507855?title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+  <div class="video-responsivo">
+    <iframe src="https://player.vimeo.com/video/239507855?autoplay=1&color=ff9933&title=0&byline=0&portrait=0" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>  </div>
+</div>
 
 <div class="col-3 col-s-12">
   <div class="aside">
     <h2>O que é?</h2>
     <p>Uma "rede social" para assistir a séries e vídeos em alta qualidade sem sair de casa.</p>
     <h2>Como funciona?</h2>
-    <p>Acesse o menu da esquerda para achar algo que goste.</p>
+    <p>Acesse o menu para achar algo que goste.</p>
     <h2>O que temos?</h2>
     <p>Temos séries, videoclipes, filmes e conteúdo educativo para todos os públicos.</p>
   </div>
@@ -134,7 +179,7 @@ text-decoration: none;
 </div>
 
 <div class="footer">
-  <p>Streamndie - 2017</p>
+  <p>Creative Commons - Streamindie</p>
 </div>
 
 </body>
